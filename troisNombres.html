@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3</title>
+</head>
+<body>
+    
+
+    <script>
+
+            var a = parseInt(prompt("Entrez le 1er nombre :"));
+            var b = parseInt(prompt("Entrez le 2ème nombre :"));
+            var c = parseInt(prompt("Entrez le 3ème nombre :"));
+
+            var nombres = [a, b, c];
+
+            nombres.sort(function(x, y){
+            return x - y;
+            });
+
+            alert("les nombres dans l'ordre croissant sont : " + nombres);
+
+    </script>
+</body>
+</html>

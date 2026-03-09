@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX2: Conversion de durées</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function hjms(){
+            var s = prompt("durée en secondes : ");
+
+            var jours = Math.floor(s / 86400);
+            var reste = s % 86400;
+
+            var heures = Math.floor(reste / 3600);
+            reste = reste % 3600;
+
+            var minutes = Math.floor(reste / 60);
+            var secondes = reste % 60;
+
+            alert("cette durée équivaut à " + jours + " jours, "+ heures + " heures, "+ minutes + " minutes et "+ secondes + " secondes.");}
+        hjms();
+    </script>
+</body>
+</html>

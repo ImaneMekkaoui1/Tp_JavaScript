@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX4_escaliers</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let motif = parseInt(prompt("Un motif de taille = "));
+
+        function triangle1(n){
+
+        let i = 1;
+
+        while(i <= n){
+
+        let ligne = "";
+        let j = 1;
+
+        while(j <= i){
+            ligne += "*";
+            j++;
+        }
+
+        console.log(ligne);
+        i++;
+    }
+}
+
+triangle1(motif);
+
+</script>
+</body>
+</html>
