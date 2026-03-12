@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let valeur = parseInt(prompt("Donnez une valeur :"));
+
+let u0 = 0;
+let u1 = 1;
+let rang = 1;
+
+while (u1 <= valeur) {
+    let u = u0 + u1;
+    u0 = u1;
+    u1 = u;
+    rang++;
+}
+
+document.write("Premier terme supérieur : " + u1 + "<br>");
+document.write("Rang : " + rang);
+</script>
+</body>
+</html>

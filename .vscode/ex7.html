@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Raca1(){
+
+let A = parseFloat(prompt("Pour un nombre A entre 1 et 100 :"));
+let u = A / 2;
+
+while (Math.abs(u*u - A) >= 0.0001) {
+    u = 0.5 * (u + A/u);
+}
+
+document.write("Valeur approchée de la racine carrée = " + u);
+
+}
+
+Raca1();
+</script>
+</body>
+</html>

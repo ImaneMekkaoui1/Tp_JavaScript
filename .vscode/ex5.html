@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Donnez un entier positif :"));
+let premier = true;
+let diviseur = 0;
+
+for (let i = 2; i <= n/2; i++) {
+    if (n % i === 0) {
+        premier = false;
+        diviseur = i;
+        break;
+    }
+}
+
+if (premier && n > 1) {
+    document.write(n + " est un nombre premier");
+} else {
+    document.write(n + " n'est pas un nombre premier, il est divisible par " + diviseur);
+}
+
+    </script>
+</body>
+</html>
